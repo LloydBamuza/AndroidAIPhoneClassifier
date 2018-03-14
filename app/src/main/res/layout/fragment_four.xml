@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_dark">
+
+    <EditText
+        android:id="@+id/edtPlasticDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtScreenSize"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:hint="Plastic Design? (0 - 1)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtMetalDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtPlasticDesign"
+        android:layout_alignStart="@+id/edtPlasticDesign"
+        android:layout_below="@+id/edtPlasticDesign"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="Metal Design? (0-1)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtVidRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtMetalDesign"
+        android:layout_alignStart="@+id/edtMetalDesign"
+        android:layout_below="@+id/edtMetalDesign"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Max Video Res (360 - 4000)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtCpuCores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtVidRes"
+        android:layout_alignStart="@+id/edtVidRes"
+        android:layout_below="@+id/edtVidRes"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="NO. CPU Cores (1-8)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtCpuSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtCpuCores"
+        android:layout_alignStart="@+id/edtCpuCores"
+        android:layout_below="@+id/edtCpuCores"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="CPU Speed (800 - 2500)(mhz)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtCamPxls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtCpuSpeed"
+        android:layout_alignStart="@+id/edtCpuSpeed"
+        android:layout_below="@+id/edtCpuSpeed"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:hint="Camera Pixels(5 -20)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtRam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtCamPxls"
+        android:layout_alignStart="@+id/edtCamPxls"
+        android:layout_below="@+id/edtCamPxls"
+        android:layout_marginLeft="6dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="RAM (128 - 6000)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtScreenSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtPlasticDesign"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/edtPlasticDesign"
+        android:ems="10"
+        android:hint="Screen Size (3.0 - 6.3)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btnTrain"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_orange_light"
+        android:text="Click to Train" />
+
+    <EditText
+        android:id="@+id/edtOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtCamPxls"
+        android:layout_alignStart="@+id/edtCamPxls"
+        android:layout_below="@+id/edtRam"
+        android:ems="10"
+        android:hint="Output(1 or 0)"
+        android:inputType="numberDecimal" />
+
+
+</RelativeLayout>

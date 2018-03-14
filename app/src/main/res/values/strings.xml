@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Android AI Phone Classifier</string>
+    <string name="fragment_one">Fragment One</string>
+</resources>

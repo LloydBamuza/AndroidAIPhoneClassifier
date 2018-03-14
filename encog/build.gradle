@@ -1,0 +1,5 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('encog-engine-2.5.0.jar'))
+dependencies {
+    implementation files('encog-engine-2.5.0.jar')
+}
